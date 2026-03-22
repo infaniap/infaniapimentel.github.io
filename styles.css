@@ -7,7 +7,7 @@
   --font-script:   "Ballet", cursive;
   --font-initial:  "Mea Culpa", cursive;
   --font-body:     "Amiri", serif;
-
+--font-btn-font: "Outfit", sans-serif;
   /* SIZES */
   --font-name:     52px;
   --font-role:     16px;
@@ -19,8 +19,8 @@
   --color-page:    #e1dededb;
   --border-color:   #efefef;
   --color-dark:    #111111;
-  --color-crimson: #860000;
-  --color-btn-bg:  rgba(255, 255, 255, 0.92);
+  --color-crimson: #ffffff;
+  --color-btn-bg:  rgba(54, 53, 66, 0.82);
   --color-nav:     #1a1a1a;
 
   /* SPACING */
@@ -85,12 +85,12 @@ body {
 
 }
 
-
 /* ─── TOP NAV ─────────────────────────────────── */
 .top-nav {
   align-self: flex-end;
   display: flex;
   gap: 28px;
+  pointer-events: auto;
 }
 
 .nav-link {
@@ -148,7 +148,8 @@ body {
   display: flex;
   gap: 65px;
   margin-top: auto;
-  margin-bottom: 6vh;
+  margin-bottom: 3vh;
+  pointer-events: auto;
 }
 
 .btn {
@@ -162,7 +163,7 @@ body {
   background: var(--color-btn-bg);
   color: var(--color-crimson);
 
-  font-family: var(--font-body);
+  font-family: var(--font-btn-font);
   font-size: var(--font-btn);
   letter-spacing: 2px;
   text-decoration: none;
@@ -186,8 +187,9 @@ body {
 /* ─── LED HOTSPOTS ───────────────────────────── */
 .led-hotspots {
   position: absolute;
-  z-index: 3;
+  z-index: 10;
   pointer-events: all;
+  pointer-events: auto;
   /* JS sets width/height/left/top to match rendered image bounds */
 }
 
@@ -250,10 +252,129 @@ body {
   color: #333;
 }
 
+/* ─── WORK ───────────────────────────────────── */
+.work {
+  background: var(--color-page);
+  padding: 100px 0;
+  border-top: 8px solid var(--border-color);
+}
 
+.work-inner {
+  width: 910px;
+  margin: 0 auto;
+}
 
+/* Filter buttons */
+.work-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 52px;
+}
 
+.filter-btn {
+  font-family: var(--font-body);
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-dark);
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 7px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
 
+.filter-btn:hover {
+  border-color: var(--color-crimson);
+  color: var(--color-crimson);
+}
+
+.filter-btn.active {
+  background: var(--color-dark);
+  color: #fff;
+  border-color: var(--color-dark);
+}
+
+/* Project grid */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  transition: opacity 0.25s ease, transform 0.25s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+  transform: translateY(-3px);
+}
+
+.project-card.hidden {
+  opacity: 0;
+  transform: scale(0.97);
+  pointer-events: none;
+  position: absolute;
+  visibility: hidden;
+}
+
+.card-img.placeholder {
+  width: 100%;
+  height: 160px;
+  background: #d9d9d9;
+}
+
+.card-body {
+  padding: 18px 20px 22px;
+}
+
+.card-tag {
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-crimson);
+}
+
+.card-title {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-dark);
+  margin: 6px 0 8px;
+}
+
+.card-desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+}
+
+@media (max-width: 900px) {
+  .work-inner {
+    width: 90%;
+  }
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work-filters {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* ─── RESPONSIVE ─────────────────────────────── */
 @media (max-width: 1000px) {
