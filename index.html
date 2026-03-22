@@ -1,172 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infania Pimentel</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Mea+Culpa&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infania Pimentel</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Mea+Culpa&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
 
-    <script src="script.js" defer></script>
-    </head>
+<body>
 
-    <body>
+   <!-- ── TOP RIGHT SOCIAL ── -->
+  <nav class="top-social">
+    <a href="https://github.com/infaniap" class="work-nav-link" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/infania-pimentel-a25778231/" class="work-nav-link" target="_blank">LinkedIn</a>
+  </nav>
 
-    <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
-    <header class="hero">
+  <!-- ── IDENTITY ── -->
+  <div class="hero-identity">
+    <h1 class="name">
+      <span class="initial">I</span><span class="rest">nfania Pimentel</span>
+    </h1>
+    <h2 class="role">HUMAN FACTORS ENGINEER</h2>
+  </div>
 
-        <div class="hero-media">
-            <img src="assets/photos/leds.png" alt="Colorful LED components" class="hero-img">
+  <!-- ── BUTTON BAND ── -->
+  <div class="hero-band">
+    <a class="btn" href="work.html">MY WORK</a>
+    <a class="btn" href="#">RESUME</a>
+    <a class="btn" href="#">CONTACT</a>
+  </div>
 
-            <!-- LED Hotspots -->
-            <div class="led-hotspots">
-            <div class="led-spot" data-led="1"></div>
-            <div class="led-spot" data-led="2"></div>
-            <div class="led-spot" data-led="3"></div>
-            <div class="led-spot" data-led="4"></div>
-            <div class="led-spot" data-led="5"></div>
-            <div class="led-spot" data-led="6"></div>
-            <div class="led-spot" data-led="7"></div>
-            <div class="led-spot" data-led="8"></div>
-            <div class="led-spot" data-led="9"></div>
-            <div class="led-spot" data-led="10"></div>
-            <div class="led-spot" data-led="11"></div>
-            <div class="led-spot" data-led="12"></div>
-            <div class="led-spot" data-led="13"></div>
-            <div class="led-spot" data-led="14"></div>
-            <div class="led-spot" data-led="15"></div>
-            <div class="led-spot" data-led="16"></div>
-            </div>
-        </div>
+  <!-- ── LED HERO ── -->
+  <header class="hero">
+    <div class="hero-media">
+      <img src="assets/photos/leds.png" alt="Colorful LED components" class="hero-img">
+      <div class="led-hotspots">
+        <div class="led-spot" data-led="1"></div>
+        <div class="led-spot" data-led="2"></div>
+        <div class="led-spot" data-led="3"></div>
+        <div class="led-spot" data-led="4"></div>
+        <div class="led-spot" data-led="5"></div>
+        <div class="led-spot" data-led="6"></div>
+        <div class="led-spot" data-led="7"></div>
+        <div class="led-spot" data-led="8"></div>
+        <div class="led-spot" data-led="9"></div>
+        <div class="led-spot" data-led="10"></div>
+        <div class="led-spot" data-led="11"></div>
+        <div class="led-spot" data-led="12"></div>
+        <div class="led-spot" data-led="13"></div>
+        <div class="led-spot" data-led="14"></div>
+        <div class="led-spot" data-led="15"></div>
+        <div class="led-spot" data-led="16"></div>
+      </div>
+    </div>
+  </header>
+  <!-- ── ABOUT ── -->
+  <section class="about">
+    <div class="about-inner">
+      <img src="assets/photos/infania.jpeg" alt="Infania Pimentel" class="about-photo">
+      <div class="about-text">
+        <p>I design wearables and embedded systems that shape real-world interaction. I build physical–digital products where UX, hardware, and system behavior need to work together seamlessly.</p>
+        <p>My work spans hardware–software integration and communication systems (BLE, NFC, WiFi, Serial), using human factors to identify interaction breakdowns and turn them into reliable, usable systems.</p>
+        <p>I'm completing an M.S. in Human Factors Engineering at Tufts University, where my thesis involves designing and validating a wearable interaction system from prototype to functional deployment.</p>
+      </div>
+    </div>
+  </section>
 
-        <div class="hero-overlay">
-            <nav class="top-nav">
-            <a href="https://github.com/infaniap" class="nav-link" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/infania-pimentel-a25778231/" class="nav-link" target="_blank">LinkedIn</a>
-            </nav>
+  
 
-            <div class="hero-identity">
-            <h1 class="name">
-                <span class="initial">I</span><span class="rest">nfania Pimentel</span>
-            </h1>
-            <h2 class="role">HUMAN FACTORS ENGINEER</h2>
-            </div>
+  <div class="curtain"></div>
 
-            <div class="hero-buttons">
-            <a class="btn" href="#">MY WORK</a>
-            <a class="btn" href="#">RESUME</a>
-            <a class="btn" href="#">CONTACT</a>
-            </div>
-        </div>
-
-        </header>
-        <!-- ═══════════════════════════ WORK ═══════════════════════════ -->
-        <section class="work" id="work">
-
-        <div class="work-inner">
-
-            <div class="work-filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="interaction">Interaction Systems</button>
-            <button class="filter-btn" data-filter="hf">Human Factors</button>
-            <button class="filter-btn" data-filter="robotics">Robotics</button>
-            </div>
-
-            <div class="work-grid">
-
-            <div class="project-card" data-category="interaction">
-                <div class="card-img placeholder"></div>
-                <div class="card-body">
-                <span class="card-tag">Tangible Interaction</span>
-                <h4 class="card-title">Project Title</h4>
-                <p class="card-desc">Short description of the project goes here.</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="interaction">
-                <div class="card-img placeholder"></div>
-                <div class="card-body">
-                <span class="card-tag">Embedded Systems</span>
-                <h4 class="card-title">Project Title</h4>
-                <p class="card-desc">Short description of the project goes here.</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="interaction">
-                <div class="card-img placeholder"></div>
-                <div class="card-body">
-                <span class="card-tag">Behavior Change</span>
-                <h4 class="card-title">Project Title</h4>
-                <p class="card-desc">Short description of the project goes here.</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="hf">
-                <div class="card-img placeholder"></div>
-                <div class="card-body">
-                <span class="card-tag">User Research</span>
-                <h4 class="card-title">Project Title</h4>
-                <p class="card-desc">Short description of the project goes here.</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="hf">
-                <div class="card-img placeholder"></div>
-                <div class="card-body">
-                <span class="card-tag">Usability Testing</span>
-                <h4 class="card-title">Project Title</h4>
-                <p class="card-desc">Short description of the project goes here.</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="hf">
-                <div class="card-img placeholder"></div>
-                <div class="card-body">
-                <span class="card-tag">Interface Design</span>
-                <h4 class="card-title">Project Title</h4>
-                <p class="card-desc">Short description of the project goes here.</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="robotics">
-                <div class="card-img placeholder"></div>
-                <div class="card-body">
-                <span class="card-tag">Building Systems</span>
-                <h4 class="card-title">Project Title</h4>
-                <p class="card-desc">Short description of the project goes here.</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="robotics">
-                <div class="card-img placeholder"></div>
-                <div class="card-body">
-                <span class="card-tag">Control & Sensing</span>
-                <h4 class="card-title">Project Title</h4>
-                <p class="card-desc">Short description of the project goes here.</p>
-                </div>
-            </div>
-
-            </div>
-        </div>
-        </section>
-        
-    <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
-    <section class="about">
-        <div class="about-inner">
-        <h3 class="about-heading">About Me</h3>
-        <p class="about-text">
-I design wearables and embedded systems that shape real-world interaction. I build physical–digital products where UX, hardware, and system behavior need to work together seamlessly.<br><br>
-
-My work spans hardware–software integration and communication systems (BLE, NFC, WiFi, Serial), using human factors to identify interaction breakdowns and turn them into reliable, usable systems.<br><br>
-
-I design wearable systems that use glanceable cues and embedded signals to actively shape social behavior and interaction.<br><br>
-
-I’m completing an M.S. in Human Factors Engineering at Tufts University, where my thesis involves designing and validating a wearable interaction system from prototype to functional deployment.
-</p>
-        </div>
-    </section>
-
-    </body>
+</body>
 </html>

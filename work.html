@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — Infania Pimentel</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Mea+Culpa&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════ WORK PAGE NAV ═══════════════════════════ -->
+  <header class="work-hero">
+
+    <div class="site-nav site-nav--page">
+      <div class="site-nav-left">
+        <a href="index.html" class="site-nav-name">Infania Pimentel</a>
+      </div>
+      <div class="site-nav-right">
+        <a href="index.html" class="work-nav-link">Home</a>
+        <a href="work.html" class="work-nav-link active">Work</a>
+        <a href="#" class="work-nav-link">Resume</a>
+        <a href="#" class="work-nav-link">Contact</a>
+        <span class="site-nav-divider"></span>
+        <a href="https://github.com/infaniap" class="work-nav-link" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/infania-pimentel-a25778231/" class="work-nav-link" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- ═══════════════════════════ WORK ═══════════════════════════ -->
+  <section class="work">
+    <div class="work-inner">
+
+      <div class="work-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="interaction">Interaction Systems</button>
+        <button class="filter-btn" data-filter="hf">Human Factors</button>
+        <button class="filter-btn" data-filter="robotics">Robotics</button>
+      </div>
+
+      <div class="work-grid">
+
+        <div class="project-card" data-category="interaction">
+          <div class="card-img placeholder"></div>
+          <div class="card-body">
+            <span class="card-tag">Tangible Interaction</span>
+            <h4 class="card-title">SociaLIGHT</h4>
+            <p class="card-desc">Wearable system using glanceable cues to influence social interaction.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="interaction">
+          <div class="card-img placeholder"></div>
+          <div class="card-body">
+            <span class="card-tag">Embedded Systems</span>
+            <h4 class="card-title">Mailbox System</h4>
+            <p class="card-desc">ESP-based pairing system using RSSI to link physical objects.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="hf">
+          <div class="card-img placeholder"></div>
+          <div class="card-body">
+            <span class="card-tag">User Research</span>
+            <h4 class="card-title">Wearable Study</h4>
+            <p class="card-desc">Behavior analysis of interaction patterns in group settings.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="robotics">
+          <div class="card-img placeholder"></div>
+          <div class="card-body">
+            <span class="card-tag">Control & Sensing</span>
+            <h4 class="card-title">Robotics System</h4>
+            <p class="card-desc">Sensor-driven interaction systems with real-time control.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="curtain"></div>
+
+</body>
+</html>
