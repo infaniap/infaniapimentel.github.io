@@ -1,0 +1,25 @@
+# Mac
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+.myenv/
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Data / outputs (if you add later)
+*.csv
+*.json

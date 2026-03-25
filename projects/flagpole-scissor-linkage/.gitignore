@@ -1,0 +1,22 @@
+# Mac
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+.myenv/
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# Misc
+*.zip
+*.csv
+*.tmp

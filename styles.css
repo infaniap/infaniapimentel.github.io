@@ -111,8 +111,9 @@ body {
    BUTTON BAND
    ═══════════════════════════════════════════════ */
 .hero-band {
-  position: relative;
-  z-index: 2;
+  position: sticky;
+  top: 0;
+  z-index: 50;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,6 +257,9 @@ body {
    WORK PAGE NAV
    ═══════════════════════════════════════════════ */
 .site-nav--page {
+  position: sticky;
+  top: 0;
+  z-index: 50;
   display: flex;
   align-items: center;
   justify-content: space-between;
