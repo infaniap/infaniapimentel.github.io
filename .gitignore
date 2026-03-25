@@ -1,12 +1,12 @@
-.DS_Store
-**/.DS_Storeprojects/barista/*.MOV
-projects/airtable-remote-robot-navigation/
-projects/color-sensor-line-following-robot/
-projects/flagpole-scissor-linkage/
-projects/vision-line-following-r*/
-.DS_Store
-**/.DS_Store
-**/*.MOV echo **/*.mov git add .gitignore git commit -m ignore video files git push
-**/*.MOV echo **/*.mov git add .gitignore git commit -m ignore video files git push
+# Videos
 **/*.MOV
 **/*.mov
+**/*.mp4
+**/*.MP4
+
+# System
+.DS_Store
+**/.DS_Store
+
+# Nested git repos
+projects/*/.git
