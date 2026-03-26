@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotic Café — Infania Pimentel</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../projects.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Mea+Culpa&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+  <script src="../../script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="site-nav--page">
+    <div class="site-nav-left">
+      <a href="../../index.html" class="site-nav-name">Infania Pimentel</a>
+    </div>
+    <div class="site-nav-right">
+      <a href="../../index.html" class="work-nav-link">Home</a>
+      <a href="../../work.html" class="work-nav-link active">Work</a>
+      <a href="#" class="work-nav-link">Resume</a>
+      <a href="#" class="work-nav-link">Contact</a>
+      <span class="site-nav-divider"></span>
+      <a href="https://github.com/infaniap" class="work-nav-link" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/infania-pimentel-a25778231/" class="work-nav-link" target="_blank">LinkedIn</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO IMAGE ── -->
+  <div class="proj-hero-img">
+    <img src="FrontOfMilkSystem.jpg" alt="Milk frothing system front view">
+  </div>
+
+  <!-- ── PROJECT HEADER ── -->
+  <div class="proj-header">
+    <div class="proj-header-inner">
+      <a href="../../work.html" class="proj-back">← Back to Work</a>
+      <div class="proj-meta">
+        <span class="proj-category">Robotics</span>
+        <span class="proj-meta-divider">·</span>
+        <span class="proj-year">2024</span>
+      </div>
+      <h1 class="proj-title">Robotic Café — Milk Frothing System</h1>
+      <p class="proj-subtitle">Fully automated milk dispensing and frothing subsystem for a multi-team robotic café, handling precise fluid delivery, autonomous frothing, and controlled pour via a worm gear mechanism.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">Peristaltic Pump</span>
+        <span class="proj-tag">Worm Gear</span>
+        <span class="proj-tag">Stepper Motor</span>
+        <span class="proj-tag">Fluid Control</span>
+        <span class="proj-tag">Systems Integration</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="proj-main">
+
+    <!-- ── OVERVIEW ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Overview</div>
+        <div class="proj-section-content">
+          <p>This was a multi-team final project to build a fully autonomous café — from order intake to latte delivery — with no human involvement in operations. Four teams each owned a distinct subsystem: transport, coffee brewing, milk frothing, and latte art. I was part of the Milk Frothing team.</p>
+          <p>Our subsystem was responsible for dispensing a precise 8oz volume of oat milk, frothing it autonomously, and delivering it into the espresso cup. Fluid delivery was handled by a peristaltic pump, chosen for its ability to meter exact volumes without direct contact between the pump mechanism and the fluid. The milk frother was directly wired into the control circuit, bypassing its native power supply to enable programmatic activation.</p>
+          <p>To facilitate the pour, a worm gear mechanism controlled the angular tilt of the cup, allowing the frothed milk to be deposited gradually so the foam layer settled on top of the espresso. Stepper motors provided the precise positional control needed for repeatable cup orientation. The system also included a secondary fluid line for an automated cleaning cycle between runs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS / TOOLS ── -->
+    <section class="proj-section proj-section--alt">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Skills & Tools</div>
+        <div class="proj-section-content">
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h4 class="skill-group-title">Hardware</h4>
+              <ul>
+                <li>Peristaltic Pump</li>
+                <li>Stepper Motor</li>
+                <li>Worm Gear System</li>
+                <li>Hardwired Frother</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">Design</h4>
+              <ul>
+                <li>Fluid Metering</li>
+                <li>Angular Tilt Control</li>
+                <li>Cleaning Circuit</li>
+                <li>Mechanical Assembly</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">Systems</h4>
+              <ul>
+                <li>Multi-team Integration</li>
+                <li>Automation Sequencing</li>
+                <li>Hardware–Software Co-design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PHOTO GALLERY ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Gallery</div>
+        <div class="proj-section-content">
+          <div class="proj-gallery">
+            <div class="gallery-item gallery-item--wide">
+              <img src="FrontOfMilkSystem.jpg" alt="Front of milk frothing system" class="gallery-placeholder">
+              <span class="gallery-caption">Front view — peristaltic pump, dual fluid lines (oat milk + cleaning), and hardwired frother</span>
+            </div>
+            <div class="gallery-item gallery-item--wide">
+              <img src="wormgear.jpg" alt="Worm gear side profile" class="gallery-placeholder">
+              <span class="gallery-caption">Side profile — worm gear mechanism controlling cup tilt angle for controlled milk pour</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VIDEO ── -->
+    <!-- Uncomment when uploaded to YouTube -->
+    <!--
+    <section class="proj-section proj-section--alt">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Video</div>
+        <div class="proj-section-content">
+          <div class="proj-video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID"
+              title="Robotic Café demo"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p class="proj-video-caption">Full café run — milk dispensing, frothing, and pour sequence.</p>
+        </div>
+      </div>
+    </section>
+    -->
+
+  </main>
+
+  <!-- ── NEXT PROJECT ── -->
+  <div class="proj-next">
+    <a href="../vision-object-recognition-navigation/index.html" class="proj-next-inner">
+      <span class="proj-next-label">Next Project</span>
+      <span class="proj-next-title">Vision Object Recognition Navigation →</span>
+    </a>
+  </div>
+
+</body>
+</html>
