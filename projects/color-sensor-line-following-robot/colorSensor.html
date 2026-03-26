@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Line-Following Robot — Infania Pimentel</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../projects.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Mea+Culpa&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+  <script src="../../script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="site-nav--page">
+    <div class="site-nav-left">
+      <a href="../../index.html" class="site-nav-name">Infania Pimentel</a>
+    </div>
+    <div class="site-nav-right">
+      <a href="../../index.html" class="work-nav-link">Home</a>
+      <a href="../../work.html" class="work-nav-link active">Work</a>
+      <a href="#" class="work-nav-link">Resume</a>
+      <a href="#" class="work-nav-link">Contact</a>
+      <span class="site-nav-divider"></span>
+      <a href="https://github.com/infaniap" class="work-nav-link" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/infania-pimentel-a25778231/" class="work-nav-link" target="_blank">LinkedIn</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO IMAGE ── -->
+  <div class="proj-hero-img">
+    <img src="BirdsEye.jpg" alt="Line-following robot birds eye view">
+  </div>
+
+  <!-- ── PROJECT HEADER ── -->
+  <div class="proj-header">
+    <div class="proj-header-inner">
+      <a href="../../work.html" class="proj-back">← Back to Work</a>
+      <div class="proj-meta">
+        <span class="proj-category">Robotics</span>
+        <span class="proj-meta-divider">·</span>
+        <span class="proj-year">2024</span>
+      </div>
+      <h1 class="proj-title">Line-Following Robot</h1>
+      <p class="proj-subtitle">Autonomous robot that follows a colored path through a maze using real-time color sensing and differential motor control.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">Raspberry Pi</span>
+        <span class="proj-tag">Color Sensing</span>
+        <span class="proj-tag">Differential Drive</span>
+        <span class="proj-tag">PWM Motor Control</span>
+        <span class="proj-tag">Autonomous Navigation</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="proj-main">
+
+    <!-- ── OVERVIEW ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Overview</div>
+        <div class="proj-section-content">
+          <p>This project involved designing an autonomous navigation system built around a color sensor. The goal was to create a robot capable of following a specific blue-colored line through a maze containing multiple lines of different colors — requiring the system to distinguish and track only the target path.</p>
+          <p>The hardware setup used two DC motors controlled via a Raspberry Pi's GPIO pins. All control logic was written in Python, handling motor speed, direction, and movement decisions based on detected color intensity values from a frequency-based RGB sensor.</p>
+          <p>A lightweight state system managed line tracking, crossroad detection, and directional correction — using closed-loop sensor feedback and PWM-based speed control to keep the robot on path in real time.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS / TOOLS ── -->
+    <section class="proj-section proj-section--alt">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Skills & Tools</div>
+        <div class="proj-section-content">
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h4 class="skill-group-title">Hardware</h4>
+              <ul>
+                <li>Raspberry Pi</li>
+                <li>L298N Driver</li>
+                <li>DC Motors</li>
+                <li>Color Sensor</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">Design</h4>
+              <ul>
+                <li>Differential Drive</li>
+                <li>Sensor Mounting</li>
+                <li>CAD Modeling</li>
+                <li>Mechanical Assembly</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">Software</h4>
+              <ul>
+                <li>Python</li>
+                <li>GPIO Control</li>
+                <li>PWM Speed Control</li>
+                <li>State Logic</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PHOTO GALLERY ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Gallery</div>
+        <div class="proj-section-content">
+          <div class="proj-gallery">
+            <div class="gallery-item gallery-item--wide">
+              <img src="MarioInspiredFollower.jpg" alt="Mario inspired robot" class="gallery-placeholder">
+              <span class="gallery-caption">Mario-inspired robot design</span>
+            </div>
+            <div class="gallery-item">
+              <img src="BaseHoldingSensorAndWheelDowelsTopCAD.jpeg" alt="Base CAD top view" class="gallery-placeholder">
+              <span class="gallery-caption">Base CAD — top view with sensor and wheel dowels</span>
+            </div>
+            <div class="gallery-item">
+              <img src="BaseHoldingSensorAndWheelDowelsBottomCAD.JPEG.jpeg" alt="Base CAD bottom view" class="gallery-placeholder">
+              <span class="gallery-caption">Base CAD — bottom view</span>
+            </div>
+            <div class="gallery-item">
+              <img src="DoorCAD.jpg" alt="Door CAD" class="gallery-placeholder">
+              <span class="gallery-caption">Door component CAD</span>
+            </div>
+            <div class="gallery-item">
+              <img src="treeDecorCAD.jpg" alt="Tree decor CAD" class="gallery-placeholder">
+              <span class="gallery-caption">Tree decoration CAD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CODE ── -->
+    <section class="proj-section">
+      <div class="proj-section-inner">
+        <div class="proj-section-label">Code</div>
+        <div class="proj-section-content">
+          <p class="proj-code-intro">Full source including color sensing logic, PWM motor control, and state-based navigation.</p>
+          <a href="https://github.com/infaniap/color-sensor-line-following-robot" class="proj-code-link" target="_blank">View on GitHub → color-sensor-line-following-robot</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── NEXT PROJECT ── -->
+  <div class="proj-next">
+    <a href="../flagpole-scissor-linkage/index.html" class="proj-next-inner">
+      <span class="proj-next-label">Next Project</span>
+      <span class="proj-next-title">Flagpole Scissor Linkage →</span>
+    </a>
+  </div>
+
+</body>
+</html>
