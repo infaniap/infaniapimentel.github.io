@@ -481,17 +481,6 @@ a.project-card {
   color: #444;
 }
 
-.gallery-item video {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 4px;
-  display: block;
-}
-
-.gallery-item--wide video {
-  height: 380px;
-}
 /* ─── LIGHTBOX ───────────────────────────────── */
 .lightbox-overlay {
   position: fixed;
