@@ -542,14 +542,12 @@ a.project-card {
   :root { --font-name: 32px; }
 
   .top-social {
-    .top-social {
     position: relative;
     top: unset;
     right: unset;
     justify-content: center;
     padding: 12px 0 0;
     order: 2;
-  }
   }
 
   .mobile-only { display: flex; }
@@ -571,7 +569,7 @@ a.project-card {
     max-width: 280px;
   }
 
-.about-inner {
+  .about-inner {
     width: 92%;
     grid-template-columns: 1fr;
     gap: 24px;
