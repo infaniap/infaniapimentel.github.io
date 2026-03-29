@@ -628,8 +628,12 @@ a.project-card {
     gap: 16px;
   }
 
-  .work-nav-link { font-size: 10px; letter-spacing: 1.5px; }
-  .work { padding: 40px 0 60px; }
+.work-hero .site-nav-right .work-nav-link {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+.work { padding: 40px 0 60px; }
   .work-filters { flex-wrap: wrap; gap: 8px; }
   .work-grid { grid-template-columns: 1fr; }
 
