@@ -106,7 +106,10 @@ body {
   color: var(--color-dark);
   text-transform: uppercase;
 }
-
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 /* ═══════════════════════════════════════════════
    BUTTON BAND
    ═══════════════════════════════════════════════ */
@@ -539,23 +542,28 @@ a.project-card {
   :root { --font-name: 32px; }
 
   .top-social {
+    .top-social {
     position: relative;
     top: unset;
     right: unset;
     justify-content: center;
-    padding: 8px 0 4px;
+    padding: 12px 0 0;
+    order: 2;
+  }
   }
 
   .mobile-only { display: flex; }
 
   .hero-identity {
     padding: 40px 20px 20px;
+    order: 1;
   }
 
   .hero-band {
     flex-direction: column;
     gap: 10px;
     padding: 14px 20px;
+    order: 3;
   }
 
   .btn {
