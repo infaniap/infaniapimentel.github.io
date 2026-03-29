@@ -580,6 +580,7 @@ a.project-card {
   .about-photo {
     width: 140px;
     height: 170px;
+    position: center;
   }
 }
 
