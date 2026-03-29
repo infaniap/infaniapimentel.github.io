@@ -1,0 +1,265 @@
+/* ═══════════════════════════════════════════════
+   RESUME PAGE STYLES
+   ═══════════════════════════════════════════════ */
+
+/* ─── HEADER ─────────────────────────────────── */
+.res-header {
+  background: var(--color-page);
+  border-bottom: 1px solid var(--border-color);
+  padding: 40px 0 36px;
+  overflow: hidden;
+}
+
+.res-header-inner {
+  width: 860px;
+  margin: 0 auto;
+}
+
+.res-header-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.res-name {
+  font-family: var(--font-script);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+}
+
+.res-tagline {
+  font-family: var(--font-btn-font);
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.5);
+  margin-bottom: 12px;
+}
+
+.res-contact {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: rgba(17, 17, 17, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.res-contact a {
+  color: rgba(17, 17, 17, 0.6);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.res-contact a:hover { color: var(--color-dark); }
+
+.res-dot { color: rgba(17, 17, 17, 0.3); }
+
+.res-download {
+  flex-shrink: 0;
+  font-family: var(--font-btn-font);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-dark);
+  border: 1px solid rgba(17, 17, 17, 0.3);
+  border-radius: 2px;
+  padding: 10px 20px;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.res-download:hover {
+  background: var(--color-dark);
+  color: #fff;
+  border-color: var(--color-dark);
+}
+
+/* ─── BODY ───────────────────────────────────── */
+.res-body {
+  padding: 60px 0 100px;
+}
+
+.res-inner {
+  width: 860px;
+  margin: 0 auto;
+}
+
+/* ─── SECTIONS ───────────────────────────────── */
+.res-section {
+  margin-bottom: 52px;
+}
+
+.res-section-title {
+  font-family: var(--font-btn-font);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-dark);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-dark);
+  font-weight: 500;
+}
+
+/* ─── ENTRIES ────────────────────────────────── */
+.res-entry {
+  margin-bottom: 36px;
+}
+
+.res-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.res-institution {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-dark);
+  letter-spacing: 0.01em;
+}
+
+.res-location {
+  font-family: var(--font-btn-font);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.35);
+}
+
+.res-degree {
+  font-family: var(--font-btn-font);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.6);
+  margin-bottom: 4px;
+}
+
+.res-detail {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: rgba(17, 17, 17, 0.45);
+  font-style: italic;
+}
+
+/* ─── ROLES ──────────────────────────────────── */
+.res-role {
+  margin: 20px 0 24px 0;
+  padding-left: 20px;
+  border-left: 2px solid var(--border-color);
+}
+
+.res-role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.res-role-title {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--color-dark);
+}
+
+.res-role-date {
+  font-family: var(--font-btn-font);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.35);
+  white-space: nowrap;
+}
+
+/* ─── LIST ───────────────────────────────────── */
+.res-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.res-list li {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.75;
+  color: #555;
+  padding-left: 14px;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.res-list li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  color: rgba(17, 17, 17, 0.3);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* ─── SKILLS ─────────────────────────────────── */
+.res-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.res-skill-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.res-skill-label {
+  font-family: var(--font-btn-font);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-dark);
+  padding-top: 3px;
+}
+
+.res-skill-value {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* ─── RESPONSIVE ─────────────────────────────── */
+@media (max-width: 960px) {
+  .res-header-inner,
+  .res-inner { width: 90%; }
+}
+
+@media (max-width: 700px) {
+  .res-header-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .res-name { font-size: 36px; }
+
+  .res-skill-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .res-role { padding-left: 10px; }
+}
