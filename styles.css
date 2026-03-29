@@ -605,7 +605,7 @@ a.project-card {
   justify-content: center;
 }
 .work-mobile-social {
-  order: 2;
+  order: 1;
 
   display: flex;
   width: 100%;
@@ -615,7 +615,7 @@ a.project-card {
   border-bottom: 1px solid var(--border-color);
   }
   .work-hero .site-nav-right {
-     order: 3;
+     order: 2;
 
     justify-content: center;
     flex-wrap: wrap;
