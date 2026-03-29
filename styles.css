@@ -109,7 +109,6 @@ body {
 .hero-wrapper {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 /* ═══════════════════════════════════════════════
    BUTTON BAND
