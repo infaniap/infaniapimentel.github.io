@@ -542,12 +542,14 @@ a.project-card {
   :root { --font-name: 32px; }
 
   .top-social {
+    .top-social {
     position: relative;
     top: unset;
     right: unset;
     justify-content: center;
     padding: 12px 0 0;
     order: 2;
+  }
   }
 
   .mobile-only { display: flex; }
@@ -573,20 +575,13 @@ a.project-card {
     width: 92%;
     grid-template-columns: 1fr;
     gap: 24px;
-    text-align: center;
+    justify-items: center;
   }
 
-  .about-photo {
-    width: 140px !important;
-    height: 170px !important;
-    margin: 0 auto !important;
-    display: block !important;
+   .about-photo {
+    width: 140px;
+    height: 170px;
   }
-
-  .about-text {
-    text-align: left;
-  }
-  
 }
 
 body {
