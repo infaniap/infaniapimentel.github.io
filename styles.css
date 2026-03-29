@@ -542,7 +542,6 @@ a.project-card {
   :root { --font-name: 32px; }
 
   .top-social {
-    .top-social {
     position: relative;
     top: unset;
     right: unset;
@@ -550,18 +549,19 @@ a.project-card {
     padding: 12px 0 0;
     order: 2;
   }
-  }
 
   .mobile-only { display: flex; }
 
   .hero-identity {
     padding: 40px 20px 20px;
+    order: 1;
   }
 
   .hero-band {
     flex-direction: column;
     gap: 10px;
     padding: 14px 20px;
+    order: 3;
   }
 
   .btn {
@@ -573,11 +573,18 @@ a.project-card {
     width: 92%;
     grid-template-columns: 1fr;
     gap: 24px;
+    text-align: center;
   }
 
   .about-photo {
-    width: 140px;
-    height: 170px;
+    width: 140px !important;
+    height: 170px !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+
+  .about-text {
+    text-align: left;
   }
 }
 
